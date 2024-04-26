@@ -10,7 +10,7 @@ const btnStart: any = document.querySelector('.start');
 const num: any = document.querySelector('p');
 const game: any = document.querySelector('.game');
 
-// Event listener for the start button
+
 btnStart?.addEventListener('click', () => {
     setTimeout(() => {
         game.style.display = 'block';
@@ -18,7 +18,7 @@ btnStart?.addEventListener('click', () => {
     btnStart.style.display = 'none';
 });
 
-// Event listener for the game button
+
 btn?.addEventListener('click', () => {
     if (num) {
         num.textContent = (Number(num.textContent) + 1).toString();
@@ -42,7 +42,7 @@ btn?.addEventListener('click', () => {
     }
 });
 
-// Game loop
+
 const isAlive = setInterval(() => {
     if (block && line) {
         const blockTop = parseInt(window.getComputedStyle(block).getPropertyValue("top"));
