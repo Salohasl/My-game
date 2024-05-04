@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>game</title>
-<script defer src="script.03d5056d79c34d3f17b2.js"></script><link href="build.css" rel="stylesheet"></head>
+<script defer src="script.eb56ec10c16342fa095c.js"></script><link href="build.css" rel="stylesheet"></head>
 <body>
     <div class="block-gamer">
-        <h1 class="gamer-text">Игрок такой-то</h1>
+        <h1 class="gamer-text"></h1>
     </div>
     <div class="start-block">
         <h2>WebDevMax</h2>
-        <button class="start" type="submit">НАЧАТЬ ИГРУ!</button>
+        <button class="start" type="submit">Выбрать игроков!</button>
         <div class="option">
-            <div class="option-block">
+            <div class="option-block" style="display: none;">
                 <h3>Выберите количество игроков</h3>
                 <p>&#8595;</p>
-                <button>1</button>
-                <button>2</button>
-                <div class="one-gamer">
+                <button class="btn-player">1</button>
+                <button class="btn-player">2</button>
+                <div class="one-gamer" id="one-gamer" style="display: none;">
                     <input class="gamer" type="text" placeholder="Ваше Имя">
+                    <button class="game-start" disabled>НАЧАТЬ ИГРУ!</button>
                 </div>
-                <div class="two-gamer">
+                <div class="two-gamer" style="display: none;">
                     <input type="text" placeholder="Имя 1-го игрока">
                     <input type="text" placeholder="Имя 2-го игрока">
                 </div>

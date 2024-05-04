@@ -9,7 +9,7 @@ body{
     background-image: url(/src/images/fonGame.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-  
+   
       
     &.levelThree{
       background-image: url(/src/images/pust.png);
@@ -19,12 +19,34 @@ body{
       background-color: yellow;
     }
 }
+.countdown{
+   position: fixed;
+   z-index: 200;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   color: white;
+   font-size: 40px;
+   width: 100%;
+}
 .block-gamer{
    position: fixed;
    right: 50px;
    top: 50px;
    h1{
       color: white;
+      transition: 5s;
+   }
+}
+.one-gamer{
+   button{
+      margin-top: 10px;
+      opacity: 0;
+      transition: .5s;
+      &.active{
+         opacity: 1;
+      }
    }
 }
 .start-block{
